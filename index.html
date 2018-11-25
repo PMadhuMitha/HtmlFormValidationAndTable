@@ -1,0 +1,77 @@
+<html>
+    <!DOCTYPE html>
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <style type="text/css">
+element.style {
+    background-color: bisque;
+}
+
+.col-lg-8.col-sm-12 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    
+}
+</style>
+</head>
+<body>
+
+    <div class="firstPg">
+        <button class="btn btn-primary" id="firstBtn" onclick="bringSecondPg()">Login
+        </button>
+    </div>
+<form name="form1" method="GET" action="" onsubmit="return submitDetails(this)">
+    <div class="row">
+    <div class="secondPg hidden">
+        <div class="col-lg-8 col-sm-12">
+            <label>
+                    User name
+        <input type="text" id="name" placeholder="Enter name" class="form control" required> 
+        </label>
+        <label>
+                Password
+                <input type="password" id="password" minlength="5" maxlength="10" placeholder="enter password" class="form control" required> 
+    </label>
+    </div>
+    <div class="col-lg-8 col-sm-12">
+        <input type="checkbox" name="destination" id="india" class="form control">India
+        <input type="checkbox" name="destination" id="abroad" class="form control">Abroad
+    </div>
+       0 <div class="col-lg-8 col-sm-12">
+        <input type="radio" name="gender" id="male" class="form control">Male
+        <input type="radio" name="gender" id="female" class="form control">Female
+    </div>
+    <div class="col-lg-8 col-sm-12">
+        <select id="state" class="custom-select form control" required>
+            <option> select your state</option>
+            <option>TamilNadu</option>
+            <option>Kerala</option>
+        </select>
+        <input type="number" id="phNum" minlength="" maxlength="10" placeholder="enter ph.num" class="form control" required> 
+    </div>
+    <div class="col-lg-8 col-sm-12">
+            <input type="date" min="1995-01-01" max="2018-12-01" id="date" required>
+        </div>
+    <div class="col-lg-8 col-sm-12">
+            <input type="submit" class="btn btn-primary" id="submitBtn" onclick="submitDetails()">
+                
+            
+                <input type="reset" class="btn btn-primary">
+                
+    </div>
+    
+    </div>
+    </div>
+<div class="thirdPg hidden">
+
+
+</div>
+    
+</form>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
